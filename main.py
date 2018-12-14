@@ -8,7 +8,7 @@ import wx
 import wx.aui
 import os
 import random
-import SummaryTab, FileTab, ImagesTab, AnalyzedDataTab, NewCaseDialog, mainmenu, search, searchTab, CredentialsTab        
+import SummaryTab, FileTab, ImagesTab, AnalyzedDataTab, NewCaseDialog, mainmenu, search, searchTab, SessionsTab, DNSTab, CredentialsTab        
 import connectdb
 import subprocess
 import sqlite3
