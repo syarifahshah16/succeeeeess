@@ -158,12 +158,12 @@ class TabPanel(wx.Panel):
         self.text_ctrl1 = wx.TextCtrl(self.panel_2, wx.ID_ANY, str(imgMd5), style=wx.TE_READONLY | wx.BORDER_NONE)
         self.text_ctrl2 = wx.TextCtrl(self.panel_2, wx.ID_ANY, "{imgSize} bytes".format(imgSize=imgSize), style=wx.TE_READONLY | wx.BORDER_NONE)
         self.text_ctrl3 = wx.TextCtrl(self.panel_2, wx.ID_ANY, evidenceAddDate, style=wx.TE_READONLY | wx.BORDER_NONE)
-        self.text_ctrl4 = wx.TextCtrl(self.panel_2, wx.ID_ANY, imgName, style=wx.TE_CENTRE | wx.TE_READONLY | wx.BORDER_NONE)
+        
 
         self.text_ctrl1.SetBackgroundColour(wx.Colour(235, 235, 235))
         self.text_ctrl2.SetBackgroundColour(wx.Colour(235, 235, 235))
         self.text_ctrl3.SetBackgroundColour(wx.Colour(235, 235, 235))
-        self.text_ctrl4.SetBackgroundColour(wx.Colour(235, 235, 235))
+        
 
         gridSizer = wx.FlexGridSizer(0, 2, 0, 0)
         infoSizer = wx.BoxSizer(wx.VERTICAL)
@@ -182,7 +182,6 @@ class TabPanel(wx.Panel):
         gridSizer.Add(infoSizer, 1, wx.EXPAND, 0)
 
         
-        gridSizer.Add(self.text_ctrl4, 0, wx.BOTTOM | wx.EXPAND | wx.LEFT | wx.RIGHT, 5)
-        gridSizer.Add((0, 0), 0, 0, 0)
+        
         mainSizer.Add(gridSizer, 0, wx.BOTTOM | wx.EXPAND | wx.LEFT, 6)
 # end of class MyFrame
