@@ -7,10 +7,6 @@
 import wx
 import os
 import sys  # We need sys so that we can pass argv to QApplication
-from PcapReader import PcapReader
-from PacketSender import PacketSender
-from packet import Packet
-import packetFilter
 from subprocess import Popen, PIPE
 import dpkt
 import datetime, time
